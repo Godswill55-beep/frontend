@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Page</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body id="top">
+
+  <!-- 🧭 Navigation Bar -->
+  <header>
+  <nav class="navbar">
+    <h2 class="logo">MyWebsite</h2>
+
+    <!-- 🟢 Hamburger Menu Icon -->
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- 🏠 Home Section -->
+  <section id="home">
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple webpage I'm learning to build.</p>
+    <button onclick="showMessage()">Click Me!</button>
+    <p id="output"></p>
+  </section>
+
+  <!-- 👤 About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm <strong>OG TechWise</strong>. I'm learning web development and building my first responsive website.
+      I enjoy creating websites, learning new coding skills, and improving every day.
+    </p>
+  </section>
+
+  <!-- 💼 Services Section -->
+  <section id="services">
+    <h2>My Services</h2>
+    <div class="service-container">
+      <div class="service-box">
+        <h3>🌐 Web Design</h3>
+        <p>I design clean, responsive, and user-friendly websites using HTML, CSS, and modern tools.</p>
+      </div>
+      <div class="service-box">
+        <h3>💻 Web Development</h3>
+        <p>I build functional and interactive websites using JavaScript and front-end technologies.</p>
+      </div>
+      <div class="service-box">
+        <h3>🚀 SEO Optimization</h3>
+        <p>I help improve website visibility on search engines to attract more visitors and customers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📞 Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: okestonizu@gmail.com</p>
+    <p><a href="#top">Back to Top ↑</a></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
