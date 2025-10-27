@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -88,6 +92,48 @@ h1, h2 {
   line-height: 1.5;
 }
 
+/* 💌 Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #00c9d7;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: #00c9d7;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0096a1;
+}
+
+#form-status {
+  color: #0078d7;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+
 /* Buttons */
 button {
   background-color: #d7005acb;
@@ -138,4 +184,88 @@ button:hover {
     font-size: 1.8rem;
     cursor: pointer;
   }
+}
+/* 🌅 Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("https://images.unsplash.com/photo-1517433456452-f9633a875f6f") no-repeat center center/cover;
+      height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  background-color: #00c9d7;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #0096a1;
+}
+
+/* 📱 Make hero text smaller on phones */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* 🦶 Footer Section */
+.footer {
+  background-color: #335523;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #004e56;
+}
+
+/* ✨ Scroll Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -9,6 +9,15 @@
 
 <body id="top">
 
+  <!-- 🌅 Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Hi, I'm OG TechWise 👋</h1>
+    <p>A passionate web developer learning to build modern and responsive websites.</p>
+    <a href="#services" class="hero-btn">Explore My Work</a>
+  </div>
+</section>
+
   <!-- 🧭 Navigation Bar -->
   <header>
   <nav class="navbar">
@@ -27,7 +36,7 @@
 </header>
 
   <!-- 🏠 Home Section -->
-  <section id="home">
+  <section id="home" class="fade-in">
     <h1>Welcome to My Website</h1>
     <p>This is a simple webpage I'm learning to build.</p>
     <button onclick="showMessage()">Click Me!</button>
@@ -35,7 +44,7 @@
   </section>
 
   <!-- 👤 About Section -->
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>About Me</h2>
     <p>
       Hi! I'm <strong>OG TechWise</strong>. I'm learning web development and building my first responsive website.
@@ -44,7 +53,7 @@
   </section>
 
   <!-- 💼 Services Section -->
-  <section id="services">
+  <section id="services" class="fade-in">
     <h2>My Services</h2>
     <div class="service-container">
       <div class="service-box">
@@ -62,13 +71,33 @@
     </div>
   </section>
 
-  <!-- 📞 Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: okestonizu@gmail.com</p>
-    <p><a href="#top">Back to Top ↑</a></p>
-  </section>
+  <!-- 📞 Contact Section Form -->
+<section id="contact" class="fade-in">
+  <h2>Contact Me📞</h2>
+  <form class="contact-form" onsubmit="return handleSubmit(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="form-status"></p>
+</section>
+
+
+<!-- 🦶 Footer Section -->
+<footer class="footer">
+  <p>© 2025 OG TechWise. All Rights Reserved.</p>
+  <p>Follow me:
+    <a href="https://twitter.com" target="_blank">Twitter</a> |
+    <a href="https://github.com" target="_blank">GitHub</a> |
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </p>
+</footer>
+
+
 
   <script src="script.js"></script>
+
+  
 </body>
 </html>
